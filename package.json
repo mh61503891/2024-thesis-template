@@ -1,0 +1,12 @@
+{
+	"dependencies": {
+		"bibtex-tidy": "^1.14.0"
+	},
+	"scripts": {
+		"compile": "latexmk",
+		"watch": "latexmk -pvc",
+		"clean": "latexmk -c",
+		"format:bib": "bibtex-tidy --v2 --omit=month --curly --numeric --no-align --blank-lines --duplicates=key,doi --no-escape --sort-fields --trailing-commas --no-remove-dupe-fields *.bib",
+		"format:bib:modify": "bibtex-tidy --v2 --modify --omit=month --curly --numeric --no-align --blank-lines --duplicates=key,doi --no-escape --sort-fields --trailing-commas --no-remove-dupe-fields *.bib"
+	}
+}

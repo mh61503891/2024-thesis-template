@@ -1,0 +1,74 @@
+\documentclass[dvipdfmx]{thesis}
+\begin{document}
+\makethesistitle[
+type={卒業論文},
+organization={鳥取大学},
+division={工学部電気情報系学科},
+title={論文のタイトル\\サブタイトル},
+studentnumber={B99T9999Z},
+author={鳥取 太郎},
+date={令和6年2月},
+]
+% \makethesistitle[
+% type={修士論文},
+% organization={鳥取大学大学院},
+% division={持続性社会創生科学研究科工学専攻},
+% title={論文のタイトル\\サブタイトル},
+% studentnumber={M99T9999Z},
+% author={鳥取 太郎},
+% date={令和6年2月},
+% ]
+\maketableofcontents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{はじめに}
+これは卒論・修論の本論用 \LaTeX テンプレートです．
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{関連研究}
+参考文献の参照例を示す\cite{Article:2024:Toridai}．
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{提案手法}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{図}
+\figref{fig:example-image-1}に例を示す．
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\columnwidth]{example-image}
+  \caption{図の例}
+  \label{fig:example-image-1}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{表}
+\tabref{tab:example-example}に例を示す．
+
+\begin{table}[h]
+  \centering
+  \caption{表の例}
+  \begin{tabular}{|c c c|}
+    a & b & c \\
+    \hline
+    00 & 01 & 02 \\ 
+    10 & 11 & 12 \\ 
+    20 & 21 & 22 \\ 
+  \end{tabular}
+  \label{tab:example-example}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{実験}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{考察}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{おわりに}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{acknowledge}
+謝辞をここに記述します．
+\begin{flushright}
+令和6年2月 鳥取 太郎
+\end{flushright}
+\end{acknowledge}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{junsrt}
+\bibliography{bib-paper,bib-book,bib-misc}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
